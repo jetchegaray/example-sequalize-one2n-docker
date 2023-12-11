@@ -41,14 +41,6 @@ const app = express();
 
 app.use("/api", apiRouter);
 
-//app.get('/test', async (req, res) => {
-//  await sequelizeReady
-// const [results] = await sequelize.query(`SELECT 'Hello World!' AS "data";`)
-// const [results] = await sequelize.query(`SELECT 'Hello World!' AS "data";`)
-// console.log(results)
-// res.send(results)
-//})
-
 app.use(express.static("static"));
 
 const port = 3000;
